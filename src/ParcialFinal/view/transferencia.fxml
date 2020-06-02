@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="transferencia" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParcialFinal.controller.TransferenciaController">
+   <center>
+      <AnchorPane prefHeight="139.0" prefWidth="600.0">
+         <children>
+            <VBox layoutX="5.0" prefHeight="97.0" prefWidth="589.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="589.0" text="datos para la Transferencia" />
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="251.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="338.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="365.0" text="Cedula  del receptor" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="368.0" text="Valor a trasferir" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtCedulaReceptor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtValor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="260.0" text="Cedula mandatario" />
+                        <TextField fx:id="txtCedula" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Button layoutX="267.0" layoutY="110.0" mnemonicParsing="false" onAction="#transferir" text="Transferir" />
+            <Button layoutX="14.0" layoutY="97.0" mnemonicParsing="false" onAction="#mnuOperaciones" text="Volver" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

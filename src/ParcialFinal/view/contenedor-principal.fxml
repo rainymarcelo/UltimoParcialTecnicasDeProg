@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="contenedorPrincipal" prefHeight="362.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParcialFinal.controller.ContenedorPrincipaController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="44.0" prefWidth="468.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="34.0" prefWidth="468.0" text="Banco UdeA" />
+               </children>
+            </VBox>
+            <Button layoutX="181.0" layoutY="63.0" mnemonicParsing="false" onAction="#mnrRegistrarUsuario" text="Registrar usuario" />
+            <Button layoutX="197.0" layoutY="130.0" mnemonicParsing="false" onAction="#mnrConsignar" text="Consignar" />
+            <Button layoutX="208.0" layoutY="181.0" mnemonicParsing="false" onAction="#mnrRetirar" text="Retiro" />
+            <Button layoutX="189.0" layoutY="234.0" mnemonicParsing="false" onAction="#mnrTransferencia" text="Transferencia" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
